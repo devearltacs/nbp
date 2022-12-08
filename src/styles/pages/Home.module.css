@@ -1,0 +1,68 @@
+.container {
+  @apply px-[2rem];
+}
+
+.main {
+  @apply min-h-screen py-[4rem] flex flex-1 flex-col justify-center items-center;
+}
+
+.footer {
+  @apply flex flex-1 py-[2rem] border-t-[1px] border-gray-400 justify-center items-center;
+}
+
+.footer a {
+  @apply flex justify-center items-center flex-grow;
+}
+
+.title a {
+  @apply text-blue-700 no-underline;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  @apply underline;
+}
+
+.title {
+  @apply m-0 leading-[1.15] text-[4rem];
+}
+
+.title,
+.description {
+  @apply text-center;
+}
+
+.description {
+  @apply m-[4rem] leading-[1.5] text-[1.5rem];
+}
+
+.code {
+  @apply bg-black text-white rounded-[5px] p-[0.75rem] text-[1.1rem];
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  @apply flex items-center justify-center flex-wrap max-w-[800px];
+}
+
+.logo {
+  @apply h-[1em] ml-[0.5rem];
+}
+
+@media (max-width: 600px) {
+  .grid {
+    @apply w-full flex-col;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    @apply border-[#222];
+  }
+  .code {
+    @apply bg-[#111];
+  }
+}
